@@ -49,10 +49,12 @@
 					<a href="/" class="logo__link"><img class="logo__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/site-logo.png" alt="WEB LOGO"></a>
 				</h1>
 			</div>
-			<div class="hamburger-btn">
-				<div class="openbtn1-wrap">
-					<div class="openbtn1"><span></span><span></span><span></span></div>
+			<div class="hamburger-btn-wrap">
+				<div class="hamburger-btn">
+					<div class="openbtn1-wrap">
 					<div class="menu">MENU</div>
+						<div class="openbtn1"><span></span><span></span><span></span></div>
+					</div>
 				</div>
 			</div>
 		</div>

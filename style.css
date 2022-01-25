@@ -2,7 +2,7 @@
 /*-- ヘッダー start --*/
 header#masthead {
   height: 64px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background-color: rgba(51, 51, 51, 0.5);
   width: 100%;
@@ -40,7 +40,7 @@ header#masthead {
 
 /*-- ハンバーガーボタンー start --*/
 .hamburger-btn {
-  width: 100px;
+  width: 55px;
   height: 50px;
 }
 .hamburger-btn .openbtn1-wrap {
@@ -48,18 +48,16 @@ header#masthead {
   flex-direction: row;
 }
 .hamburger-btn .menu {
-  color: #ffffff;
+  color: #c92121;
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 6px;
+  width: 50px;
   font-size: 10px;
 }
 .hamburger-btn .openbtn1 {
   position: fixed;
   z-index: 9999;
   /*ボタンを最前面に*/
-  top: 0px;
-  right: 50px;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -72,7 +70,7 @@ header#masthead {
   left: 14px;
   height: 3px;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: #d11111;
   width: 45%;
 }
 .hamburger-btn .openbtn1 span:nth-of-type(1) {
@@ -421,7 +419,7 @@ section#primary {
   display: none;
 }
 
-/*-- フロントページ start --*/
+/*-- hero-area start --*/
 .hero-area-box {
   display: flex;
   justify-content: space-between;
@@ -438,6 +436,8 @@ section#primary {
 .hero-area-box .hero-left img {
   height: 630px;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero-area-box .hero-left img::after {
   content: "";
@@ -449,13 +449,31 @@ section#primary {
   left: 0;
 }
 .hero-area-box .hero-right {
-  width: 50%;
+  width: 80%;
   height: 680px;
   background-color: black;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 4;
+}
+@media screen and (max-width: 1080px) {
+  .hero-area-box .hero-right {
+    width: 80%;
+    background-color: #1e06f5;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-area-box .hero-right {
+    width: 80%;
+    background-color: #ff00aa;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-area-box .hero-right {
+    width: 100%;
+    background-color: #f70404;
+  }
 }
 
 .hero-area-wrap {
@@ -484,4 +502,80 @@ section#primary {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/*-- フロントページ end --*//*# sourceMappingURL=style.css.map */
+/*-- hero-area end --*/
+/*-- content-area start --*/
+/*-- content-area end --*/
+/*-- 全体のレイアウトフォーム start --*/
+.site {
+  margin: 0 auto;
+}
+
+/*-- 全体のレイアウトフォーム end --*/
+/*-- body-area start --*/
+#body-area-wrap #area {
+  height: 300px;
+  background-color: red;
+}
+#body-area-wrap #area.area-1, #body-area-wrap #area.area-3 {
+  background-color: #ffffff;
+}
+#body-area-wrap #area.area-2, #body-area-wrap #area.area-4 {
+  background-color: rgba(185, 184, 184, 0.5);
+}
+#body-area-wrap #area.area-1 {
+  height: 560px;
+}
+#body-area-wrap #area.area-1-wrap {
+  position: relative;
+}
+#body-area-wrap #area .area-1-box {
+  width: 1000px;
+  margin: 0 auto;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+#body-area-wrap #area .textbox {
+  position: absolute;
+  top: 153px;
+  left: 525px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 500px;
+}
+#body-area-wrap #area .textbox-wrap {
+  padding: 2rem 1.5rem;
+  font-size: 7px;
+  font-size: 0.7rem;
+}
+#body-area-wrap #area .textbox-wrap .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#body-area-wrap #area .textbox-wrap .text {
+  margin: 10px 0 0 0;
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+#body-area-wrap #area .textbox .btn {
+  position: relative;
+  font-weight: bold;
+  line-height: 1.4;
+  display: inline-block;
+  width: 200px;
+  padding: 12px 0;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000000;
+  background-size: 200% auto;
+  font-size: 9px;
+  font-size: 0.9rem;
+  margin: 30px 0 0 0;
+}
+
+/*-- body-area end --*//*# sourceMappingURL=style.css.map */

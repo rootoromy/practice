@@ -1,7 +1,7 @@
 /*-- ヘッダー start --*/
 header#masthead{
   height: 64px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background-color: rgba(51, 51, 51,0.5);
   width: 100%;
@@ -36,7 +36,7 @@ header#masthead{
 }
 /*-- ハンバーガーボタンー start --*/
 .hamburger-btn{
-  width: 100px;
+  width: 55px;
   height:50px;
 
   & .openbtn1-wrap{
@@ -44,17 +44,15 @@ header#masthead{
     flex-direction: row;
   }
   & .menu{
-    color: #ffffff;
+    color: #c92121;
     position: fixed;
-    top:15px;
-    right: 15px;
+    top:6px;
+    width: 50px;
     font-size: 10px;
   }
   & .openbtn1{
     position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
-    top:0px;
-    right: 50px;
     cursor: pointer;
     width: 50px;
     height:50px;
@@ -68,7 +66,7 @@ header#masthead{
       left: 14px;
       height: 3px;
       border-radius: 2px;
-      background-color: #ffffff;
+      background-color: #d11111;
       width: 45%;
       &:nth-of-type(1){
         top:15px;

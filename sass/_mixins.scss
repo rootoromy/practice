@@ -1,11 +1,22 @@
-$breakpoints: (
-  "md": "screen and (max-width: 768px)",
-  "lg": "screen and (max-width: 960px)",
-  "xl": "screen and (max-width: 1140px)",
-) !default;
+// ブレイクポイントを指定
+$pc: 1080px;
+$tab: 768px;
+$sp: 480px;
 
-@mixin mq($breakpoint: md) {
-  @media #{map-get($breakpoints, $breakpoint)} {
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
     @content;
   }
 }
@@ -14,4 +25,7 @@ $breakpoints: (
   font-size: $size + px; //現代ではremはほぼ使えるので不要
   font-size: ($size / ($base * 0.625)) + rem;
 }
-
+@mixin title($size:12) {
+  font-size: ($size / (16 * 0.625)) + rem;
+  font-weight: bold;
+}
