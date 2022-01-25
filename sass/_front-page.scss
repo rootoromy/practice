@@ -1,0 +1,65 @@
+section#primary{
+  display: none;
+}
+/*-- フロントページ start --*/
+.hero-area-box{
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+  height: 680px;
+
+  & .hero-left{
+    max-width: 80%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 5;
+    & img{
+      height: 630px;
+      position: relative;
+      &::after{
+        content:'';
+        background-color: rgba(0, 0, 0,0.5);
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  & .hero-right{
+    width: 50%;
+    height: 680px;
+    background-color: black;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 4;
+  }
+  
+}
+.hero-area-wrap{
+  position: relative;
+}
+.copyright-wrap{
+    position: absolute;
+    top: 20vh;
+    right: 11vw;
+    z-index: 7;
+    & .textbox{
+      color:#ffffff;
+
+      & .text-small{
+        @include font-size(7);
+        line-height: 1.2em;
+      }
+      & .text-large{
+        @include font-size(25);
+        line-height: 1.3em;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    }
+}
+/*-- フロントページ end --*/
