@@ -524,23 +524,26 @@ section#primary {
 }
 #body-area-wrap #area.area-1 {
   height: 560px;
-}
-#body-area-wrap #area.area-1-wrap {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
 }
 #body-area-wrap #area .area-1-box {
   width: 1000px;
+  height: 520px;
   margin: 0 auto;
-  position: absolute;
-  top: 90px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
+  padding-top: 40px;
+}
+#body-area-wrap #area .area-1-box-img {
+  height: 575px;
+  background-image: url(./img/city-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 80px 0px 0px 50px;
 }
 #body-area-wrap #area .textbox {
-  position: absolute;
-  top: 153px;
-  left: 525px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 500px;
 }

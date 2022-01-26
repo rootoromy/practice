@@ -50,25 +50,31 @@
 	<div id="body-area-wrap" class="body-area-wrap">
 		<section id="area" class="area-1 area-1-wrap">
 			<div class="area-1-box">
-				<img class="area-1-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/city-img.png" alt="city">
-			</div>
-			<div class="textbox">
-				<div class="textbox-wrap">
-					<div class="title">ABOUT US</div>
-					<div class="text">
-					DIGSMILEは、デザインで人を笑顔にする会社。<br>
-					なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
-					DIGSMILEの社名にはそんな想いが込められています。
-					</div>
-					<div class="job-list__link">
-						<a href="#" class="btn">
-							READ MORE
-						</a>
+				<div class="area-1-box-img">
+					<div class="textbox">
+						<div class="textbox-wrap">
+							<div class="title">ABOUT US</div>
+							<div class="text">
+							DIGSMILEは、デザインで人を笑顔にする会社。<br>
+							なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
+							DIGSMILEの社名にはそんな想いが込められています。
+							</div>
+							<div class="job-list__link">
+								<a href="#" class="btn">
+									READ MORE
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
 		</section>
 		<section id="area" class="area-2 area-2-wrap">
+			<div class="area-2-box">
+				<!-- <img class="area-2-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/airport-img.png" alt="city">
+				<img class="area-2-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/friends-shadow-img.png" alt="city"> -->
+			</div>
 		</section>
 		<section id="area" class="area-3 area-3-wrap">
 		</section>
