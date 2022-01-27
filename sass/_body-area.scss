@@ -1,7 +1,6 @@
 /*-- body-area start --*/
 #body-area-wrap{
   & #area{
-    height: 300px;
     background-color: red;
     &.area-1,&.area-3{
       background-color: #ffffff;
@@ -33,39 +32,190 @@
         background-position: center center;
         background-size: contain;
         padding: 80px 0px 0px 50px;
+        @include tab {
+          background-size: cover;
+          align-items: center;
+          padding: 0;
+        }
+      
+        @include sp {
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          padding: 0;
+        }
       }
     }
     & .textbox{
       background-color: rgb(255 255 255 / 80%);
       width: 500px;
+      @include tab {
+        width: 90%;
+      }
+    
+      @include sp {
+        width: 95%;
+        margin: 0 auto;
+      }
+
       &-wrap{
         padding: 2rem 1.5rem;
         @include font-size(7);
-        & .title{
-          @include title();
-        }
+        
         & .text{
           margin: 10px 0 0 0;
           @include font-size(8);
         }
       }
-      & .btn {
-        position: relative;
-        font-weight: bold;
-        line-height: 1.4;
-        display: inline-block;
-        width: 200px;
-        padding: 12px 0;
-        transition: .3s;
-        text-align: center;
-        text-decoration: none;
-        letter-spacing: .1em;
-        text-transform: uppercase;
-        color: #fff;
-        background-color: #000000;
-        background-size: 200% auto;
-        @include font-size(9);
-        margin: 30px 0 0 0;
+    }
+    .title{
+      @include title();
+    }
+    .btn {
+      @include btn();
+    }
+    .area-2{
+      &-box{
+        display: flex;
+        flex-direction: row;
+        padding: 130px 0 80px 0;
+        @include font-size(8);
+          width: 1000px;
+          margin: 0 auto;
+
+        @include tab {
+          flex-direction: column;
+          width: auto;
+          padding: 108px 10px 80px 10px;
+        }
+      
+        @include sp {
+          flex-direction: column;
+          width: auto;
+          padding: 108px 10px 80px 10px;
+        }
+
+      & .left{
+        padding: 0 15px 0 0;
+        @include tab {
+          padding: 0 0 30px 0;
+        }
+        @include sp {
+          padding: 0 0 30px 0;
+        }
+      }
+      & .mini-box{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      & .img-box{
+        @include tab {
+          display: flex;
+          justify-content: center;
+        }
+        @include sp {
+          display: flex;
+          justify-content: center;
+        }
+        
+      & .area-2-img{
+        @include tab {
+          height: 265px;
+        }
+        @include sp {
+          height: 265px;
+        }
+      }
+      }
+      & .title{
+        @include tab {
+          margin: 0 0 10px 0;
+        }
+        @include sp {
+          margin: 0 0 10px 0;
+        }
+      }
+      & .text{
+        @include tab {
+          margin: 19px 0 0 0;
+        }
+        @include sp {
+          margin: 19px 0 0 0;
+        }
+      }
+      }
+      
+    }
+    .area-3{
+      &-box{
+        width: 1000px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+        & .title-box{
+          width: 30%;
+          padding: 20px 0 0 0;
+          height: 350px;
+        }
+        & .info-box{
+          width: 70%;
+          height: 350px;
+          &-wrap{
+            padding: 65px 10px 10px 10px;
+          }
+          & ul{
+            list-style-type: none;
+          }
+          & li{
+            border-bottom:dotted;/*下線を点線にする*/
+            border-color:#7e7e7e;
+            border-width:1px;
+            color: #252525;
+            width: 95%;
+          }
+          & .small-text{
+            @include font-size(4);
+          }
+          & .midi-text{
+            @include font-size(8);
+          }
+        }
+        & .info-list__link{
+          text-align: right;
+          padding: 0 32px 0 0;
+        }
+      }
+    }
+    .area-4{
+      &-box{
+        & .contact-box{
+          margin: 0 20px 0 0;
+          & .text-box{
+            @include font-size(8);
+            width: 480px;
+            margin:12px 0 0 0;
+          }
+        }
+        & .inner{
+          height: 400px;
+          width: 1000px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0 auto;
+          
+          & .pic-box{
+            margin: 0 auto;
+          }
+        }
+      }
+      
+      &-img{
+        width: 430px;
       }
     }
   }

@@ -29,3 +29,21 @@ $sp: 480px;
   font-size: ($size / (16 * 0.625)) + rem;
   font-weight: bold;
 }
+@mixin btn(){
+  position: relative;
+  font-weight: bold;
+  line-height: 1.4;
+  display: inline-block;
+  width: 200px;
+  padding: 10px 0;
+  transition: .3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000000;
+  background-size: 200% auto;
+  @include font-size(9);
+  margin: 30px 0 0 0;
+}

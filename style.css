@@ -457,22 +457,14 @@ section#primary {
   right: 0;
   z-index: 4;
 }
-@media screen and (max-width: 1080px) {
-  .hero-area-box .hero-right {
-    width: 80%;
-    background-color: #1e06f5;
-  }
-}
 @media screen and (max-width: 768px) {
   .hero-area-box .hero-right {
     width: 80%;
-    background-color: #ff00aa;
   }
 }
 @media screen and (max-width: 480px) {
   .hero-area-box .hero-right {
-    width: 100%;
-    background-color: #f70404;
+    width: 85%;
   }
 }
 
@@ -513,7 +505,6 @@ section#primary {
 /*-- 全体のレイアウトフォーム end --*/
 /*-- body-area start --*/
 #body-area-wrap #area {
-  height: 300px;
   background-color: red;
 }
 #body-area-wrap #area.area-1, #body-area-wrap #area.area-3 {
@@ -543,31 +534,57 @@ section#primary {
   background-size: contain;
   padding: 80px 0px 0px 50px;
 }
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-1-box-img {
+    background-size: cover;
+    align-items: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-1-box-img {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
 #body-area-wrap #area .textbox {
   background-color: rgba(255, 255, 255, 0.8);
   width: 500px;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .textbox {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .textbox {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 #body-area-wrap #area .textbox-wrap {
   padding: 2rem 1.5rem;
   font-size: 7px;
   font-size: 0.7rem;
 }
-#body-area-wrap #area .textbox-wrap .title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
 #body-area-wrap #area .textbox-wrap .text {
   margin: 10px 0 0 0;
   font-size: 8px;
   font-size: 0.8rem;
 }
-#body-area-wrap #area .textbox .btn {
+#body-area-wrap #area .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#body-area-wrap #area .btn {
   position: relative;
   font-weight: bold;
   line-height: 1.4;
   display: inline-block;
   width: 200px;
-  padding: 12px 0;
+  padding: 10px 0;
   transition: 0.3s;
   text-align: center;
   text-decoration: none;
@@ -580,5 +597,176 @@ section#primary {
   font-size: 0.9rem;
   margin: 30px 0 0 0;
 }
+#body-area-wrap #area .area-2-box {
+  display: flex;
+  flex-direction: row;
+  padding: 130px 0 80px 0;
+  font-size: 8px;
+  font-size: 0.8rem;
+  width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-2-box {
+    flex-direction: column;
+    width: auto;
+    padding: 108px 10px 80px 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-2-box {
+    flex-direction: column;
+    width: auto;
+    padding: 108px 10px 80px 10px;
+  }
+}
+#body-area-wrap #area .area-2-box .left {
+  padding: 0 15px 0 0;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-2-box .left {
+    padding: 0 0 30px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-2-box .left {
+    padding: 0 0 30px 0;
+  }
+}
+#body-area-wrap #area .area-2-box .mini-box {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-2-box .img-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-2-box .img-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-2-box .img-box .area-2-img {
+    height: 265px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-2-box .img-box .area-2-img {
+    height: 265px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-2-box .title {
+    margin: 0 0 10px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-2-box .title {
+    margin: 0 0 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-2-box .text {
+    margin: 19px 0 0 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-2-box .text {
+    margin: 19px 0 0 0;
+  }
+}
+#body-area-wrap #area .area-3-box {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+#body-area-wrap #area .area-3-box .title-box {
+  width: 30%;
+  padding: 20px 0 0 0;
+  height: 350px;
+}
+#body-area-wrap #area .area-3-box .info-box {
+  width: 70%;
+  height: 350px;
+}
+#body-area-wrap #area .area-3-box .info-box-wrap {
+  padding: 65px 10px 10px 10px;
+}
+#body-area-wrap #area .area-3-box .info-box ul {
+  list-style-type: none;
+}
+#body-area-wrap #area .area-3-box .info-box li {
+  border-bottom: dotted;
+  /*下線を点線にする*/
+  border-color: #7e7e7e;
+  border-width: 1px;
+  color: #252525;
+  width: 95%;
+}
+#body-area-wrap #area .area-3-box .info-box .small-text {
+  font-size: 4px;
+  font-size: 0.4rem;
+}
+#body-area-wrap #area .area-3-box .info-box .midi-text {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+#body-area-wrap #area .area-3-box .info-list__link {
+  text-align: right;
+  padding: 0 32px 0 0;
+}
+#body-area-wrap #area .area-4-box .contact-box {
+  margin: 0 20px 0 0;
+}
+#body-area-wrap #area .area-4-box .contact-box .text-box {
+  font-size: 8px;
+  font-size: 0.8rem;
+  width: 480px;
+  margin: 12px 0 0 0;
+}
+#body-area-wrap #area .area-4-box .inner {
+  height: 400px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+#body-area-wrap #area .area-4-box .inner .pic-box {
+  margin: 0 auto;
+}
+#body-area-wrap #area .area-4-img {
+  width: 430px;
+}
 
-/*-- body-area end --*//*# sourceMappingURL=style.css.map */
+/*-- body-area end --*/
+/*-- フッター start --*/
+.footer {
+  padding: 20px 30px;
+  background-color: #525252;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 4px;
+  font-size: 0.4rem;
+}
+.copyright__link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.copyright a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*-- フッター end --*//*# sourceMappingURL=style.css.map */

@@ -38,19 +38,12 @@ section#primary{
     right: 0;
     z-index: 4;
 
-    @include pc {
-      width: 80%;
-      background-color: rgb(30, 6, 245);
-    }
-  
     @include tab {
       width: 80%;
-      background-color: rgb(255, 0, 170);
     }
   
     @include sp {
-      width: 100%;
-      background-color: rgb(247, 4, 4);
+      width: 85%;
     }
   }
 

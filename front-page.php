@@ -72,15 +72,83 @@
 		</section>
 		<section id="area" class="area-2 area-2-wrap">
 			<div class="area-2-box">
-				<!-- <img class="area-2-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/airport-img.png" alt="city">
-				<img class="area-2-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/friends-shadow-img.png" alt="city"> -->
+				<div class="left mini-box">
+					<div class="title">WORKS</div>
+					<div class="img-box">
+						<img class="area-2-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/airport-img.png" alt="airport">
+					</div>
+					<div class="text">DIGSMILEの制作実績を紹介します。</div>
+					<div class="job-list__link">
+						<a href="#" class="btn area-2-btn">
+							READ MORE
+						</a>
+					</div>
+				</div>
+				<div class="right mini-box">
+					<div class="title">CULTURE</div>
+					<div class="img-box">
+						<img class="area-2-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/friends-shadow-img.png" alt="culture">
+					</div>
+					<div class="text">DIGSMILEの社内文化を紹介します。</div>
+					<div class="job-list__link">
+						<a href="#" class="btn area-2-btn">
+							READ MORE
+						</a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="area" class="area-3 area-3-wrap">
+			<div class="area-3-box">
+				<div class="title-box">
+					<div class="title">LATEST TOPICS</div>
+				</div>
+				<div class="info-box">
+					<div class="info-box-wrap">
+						<ul>
+							<li>
+								<div class="small-text">2020.02.01</div>
+								<div class="midi-text">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</div>
+							</li>
+							<li>
+								<div class="small-text">2020.01.18</div>
+								<div class="midi-text">プレスリリースのお知らせ DIGGIN’ RECORDS</div>
+							</li>
+							<li>
+								<div class="small-text">2020.01.01</div>
+								<div class="midi-text">新年明けましておめでとうございます</div>
+							</li>
+						</ul>
+						<div class="info-list__link">
+							<a href="#" class="btn">
+								READ MORE
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
 		</section>
 		<section id="area" class="area-4 area-4-wrap">
+			<div class="area-4-box">
+				<div class="inner">
+					<div class="contact-box">
+						<div class="title">CONTACT</div>
+						<div class="text-box">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</div>
+						<div class="info-list__link">
+							<a href="#" class="btn">
+								READ MORE
+							</a>
+						</div>
+					</div>
+					<div class="pic-box">
+						<img class="area-4-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/friends-smile-img.png" alt="culture">
+					</div>
+				</div>
+				
+			</div>
 		</section>
 	</div>
 	<!-- body-area end-->
 </div>
-<?php get_footer(); //footer.phpを読み込む
+<?php get_footer();?>
