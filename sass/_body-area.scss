@@ -156,19 +156,57 @@
         align-items: center;
         margin: 0 auto;
         padding: 20px 0 0 0;
+        @include tab {
+          flex-direction: column;
+          align-items: normal;
+          padding: 20px 10px 0 10px;
+          width: auto;
+        }
+        @include sp {
+          flex-direction: column;
+          align-items: normal;
+          padding: 20px 10px 0 10px;
+          width: auto;
+        }
         & .title-box{
           width: 30%;
-          padding: 20px 0 0 0;
+          padding: 10px 0 0 0;
           height: 350px;
+          @include tab {
+            width: auto;
+            height: auto;
+          }
+          @include sp {
+            width: auto;
+            height: auto;
+          }
         }
         & .info-box{
           width: 70%;
           height: 350px;
+          @include tab {
+            width: auto;
+          }
+          @include sp {
+            width: auto;
+          }
           &-wrap{
             padding: 65px 10px 10px 10px;
+            @include tab {
+              padding: 20px 0px 10px 0px;
+            }
+            @include sp {
+              padding: 20px 0px 10px 0px;
+            }
           }
           & ul{
             list-style-type: none;
+            @include tab {
+              padding-left: 0rem;
+            }
+            @include sp {
+              padding-left: 0rem;
+            }
           }
           & li{
             border-bottom:dotted;/*下線を点線にする*/
@@ -176,6 +214,12 @@
             border-width:1px;
             color: #252525;
             width: 95%;
+            @include tab {
+              margin: 0 auto;
+            }
+            @include sp {
+              margin: 0 auto;
+            }
           }
           & .small-text{
             @include font-size(4);
@@ -187,6 +231,12 @@
         & .info-list__link{
           text-align: right;
           padding: 0 32px 0 0;
+          @include tab {
+            text-align: left;
+          }
+          @include sp {
+            text-align: left;
+          }
         }
       }
     }
