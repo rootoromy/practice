@@ -6,7 +6,7 @@
       background-color: #ffffff;
     }
     &.area-2,&.area-4{
-      background-color: rgba(185, 184, 184, 0.5);
+      background-color: rgba(240, 240, 240, 1);
     }
     &.area-1{
       height: 560px;
@@ -15,7 +15,15 @@
       margin: 0 auto;
       align-items: center;
       &-wrap{
-        
+        @include pc {
+          height: 500px;
+        }
+        @include tab {
+          height: auto;
+        }
+        @include sp {
+          height: auto;
+        }
       }
     }
     & .area-1{
@@ -24,6 +32,14 @@
         height: 520px;
         margin: 0 auto;
         padding-top: 40px;
+        @include tab {
+          height: auto;
+          padding-top: 40px;
+        }
+        @include sp {
+          height: auto;
+          padding-top: 50px;
+        }
       }
       &-box-img{
         height: 575px;
@@ -34,8 +50,11 @@
         padding: 80px 0px 0px 50px;
         @include tab {
           background-size: cover;
+          display: flex;
           align-items: center;
+          justify-content: center;
           padding: 0;
+          height: 500px;
         }
       
         @include sp {
@@ -43,6 +62,7 @@
           display: flex;
           align-items: center;
           padding: 0;
+          height: 600px;
         }
       }
     }
@@ -59,7 +79,7 @@
       }
 
       &-wrap{
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.5rem;
         @include font-size(7);
         
         & .text{
@@ -82,17 +102,19 @@
         @include font-size(8);
           width: 1000px;
           margin: 0 auto;
-
+        @include pc {
+          width: 90%;
+          padding: 100px 0 80px 0;
+        }
         @include tab {
           flex-direction: column;
           width: auto;
-          padding: 108px 10px 80px 10px;
+          padding: 40px 30px 50px 30px;
         }
-      
         @include sp {
           flex-direction: column;
           width: auto;
-          padding: 108px 10px 80px 10px;
+          padding: 40px 10px 50px 10px;
         }
 
       & .left{
@@ -112,7 +134,7 @@
       & .img-box{
         @include tab {
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
         }
         @include sp {
           display: flex;
@@ -121,7 +143,8 @@
         
       & .area-2-img{
         @include tab {
-          height: 265px;
+          height: auto;
+          width: 500px;
         }
         @include sp {
           height: 265px;
@@ -156,17 +179,22 @@
         align-items: center;
         margin: 0 auto;
         padding: 20px 0 0 0;
+        @include pc {
+          width: 90%;
+        }
         @include tab {
           flex-direction: column;
           align-items: normal;
-          padding: 20px 10px 0 10px;
+          padding: 20px 30px 30px 30px;
           width: auto;
+          height: auto;
         }
         @include sp {
           flex-direction: column;
           align-items: normal;
-          padding: 20px 10px 0 10px;
+          padding: 20px 10px 20px 10px;
           width: auto;
+          height: auto;
         }
         & .title-box{
           width: 30%;
@@ -186,6 +214,7 @@
           height: 350px;
           @include tab {
             width: auto;
+            height: auto;
           }
           @include sp {
             width: auto;
@@ -242,30 +271,79 @@
     }
     .area-4{
       &-box{
+        padding: 30px 30px 50px 30px;
+        display: flex;
+        justify-content: center;
+        @include pc {
+          padding: 30px 0px 30px 0px;
+        }
+        @include tab {
+          padding: 30px 30px 50px 30px;
+        }
+        @include sp {
+          padding: 30px 10px 30px 10px;
+        }
         & .contact-box{
           margin: 0 20px 0 0;
+          @include tab {
+            margin: 0 0 0 0;
+          }
+          @include sp {
+            margin: 0 0 0 0;
+          }
           & .text-box{
             @include font-size(8);
             width: 480px;
             margin:12px 0 0 0;
+            @include tab {
+              width: auto;
+            }
+            @include sp {
+              width: auto;
+            }
           }
         }
         & .inner{
-          height: 400px;
           width: 1000px;
           display: flex;
           flex-direction: row;
           align-items: center;
           margin: 0 auto;
-          
+          @include pc {
+            width: 90%;
+            align-items: flex-start;
+            margin: 0;
+          }
+          @include tab {
+            width: auto;
+            height: auto;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            margin: 0;
+          }
+          @include sp {
+            width: auto;
+            height: auto;
+            flex-direction: column-reverse;
+          }
           & .pic-box{
             margin: 0 auto;
+            @include tab {
+              margin: 0;
+              width: 70%;
+            }
+            @include sp {
+              width: auto;
+            }
           }
         }
       }
       
       &-img{
         width: 430px;
+        @include tab {
+          width: auto;
+        }
       }
     }
   }

@@ -511,7 +511,7 @@ section#primary {
   background-color: #ffffff;
 }
 #body-area-wrap #area.area-2, #body-area-wrap #area.area-4 {
-  background-color: rgba(185, 184, 184, 0.5);
+  background-color: #f0f0f0;
 }
 #body-area-wrap #area.area-1 {
   height: 560px;
@@ -520,11 +520,38 @@ section#primary {
   margin: 0 auto;
   align-items: center;
 }
+@media screen and (max-width: 1008px) {
+  #body-area-wrap #area.area-1-wrap {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area.area-1-wrap {
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area.area-1-wrap {
+    height: auto;
+  }
+}
 #body-area-wrap #area .area-1-box {
   width: 1000px;
   height: 520px;
   margin: 0 auto;
   padding-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-1-box {
+    height: auto;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-1-box {
+    height: auto;
+    padding-top: 50px;
+  }
 }
 #body-area-wrap #area .area-1-box-img {
   height: 575px;
@@ -537,8 +564,11 @@ section#primary {
 @media screen and (max-width: 768px) {
   #body-area-wrap #area .area-1-box-img {
     background-size: cover;
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0;
+    height: 500px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -547,6 +577,7 @@ section#primary {
     display: flex;
     align-items: center;
     padding: 0;
+    height: 600px;
   }
 }
 #body-area-wrap #area .textbox {
@@ -565,7 +596,7 @@ section#primary {
   }
 }
 #body-area-wrap #area .textbox-wrap {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   font-size: 7px;
   font-size: 0.7rem;
 }
@@ -606,18 +637,24 @@ section#primary {
   width: 1000px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1008px) {
+  #body-area-wrap #area .area-2-box {
+    width: 90%;
+    padding: 100px 0 80px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   #body-area-wrap #area .area-2-box {
     flex-direction: column;
     width: auto;
-    padding: 108px 10px 80px 10px;
+    padding: 40px 30px 50px 30px;
   }
 }
 @media screen and (max-width: 480px) {
   #body-area-wrap #area .area-2-box {
     flex-direction: column;
     width: auto;
-    padding: 108px 10px 80px 10px;
+    padding: 40px 10px 50px 10px;
   }
 }
 #body-area-wrap #area .area-2-box .left {
@@ -641,7 +678,7 @@ section#primary {
 @media screen and (max-width: 768px) {
   #body-area-wrap #area .area-2-box .img-box {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 480px) {
@@ -652,7 +689,8 @@ section#primary {
 }
 @media screen and (max-width: 768px) {
   #body-area-wrap #area .area-2-box .img-box .area-2-img {
-    height: 265px;
+    height: auto;
+    width: 500px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -689,20 +727,27 @@ section#primary {
   margin: 0 auto;
   padding: 20px 0 0 0;
 }
+@media screen and (max-width: 1008px) {
+  #body-area-wrap #area .area-3-box {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   #body-area-wrap #area .area-3-box {
     flex-direction: column;
     align-items: normal;
-    padding: 20px 10px 0 10px;
+    padding: 20px 30px 30px 30px;
     width: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 480px) {
   #body-area-wrap #area .area-3-box {
     flex-direction: column;
     align-items: normal;
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px 20px 10px;
     width: auto;
+    height: auto;
   }
 }
 #body-area-wrap #area .area-3-box .title-box {
@@ -729,6 +774,7 @@ section#primary {
 @media screen and (max-width: 768px) {
   #body-area-wrap #area .area-3-box .info-box {
     width: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -802,8 +848,38 @@ section#primary {
     text-align: left;
   }
 }
+#body-area-wrap #area .area-4-box {
+  padding: 30px 30px 50px 30px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1008px) {
+  #body-area-wrap #area .area-4-box {
+    padding: 30px 0px 30px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-4-box {
+    padding: 30px 30px 50px 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-4-box {
+    padding: 30px 10px 30px 10px;
+  }
+}
 #body-area-wrap #area .area-4-box .contact-box {
   margin: 0 20px 0 0;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-4-box .contact-box {
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-4-box .contact-box {
+    margin: 0 0 0 0;
+  }
 }
 #body-area-wrap #area .area-4-box .contact-box .text-box {
   font-size: 8px;
@@ -811,19 +887,67 @@ section#primary {
   width: 480px;
   margin: 12px 0 0 0;
 }
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-4-box .contact-box .text-box {
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-4-box .contact-box .text-box {
+    width: auto;
+  }
+}
 #body-area-wrap #area .area-4-box .inner {
-  height: 400px;
   width: 1000px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 1008px) {
+  #body-area-wrap #area .area-4-box .inner {
+    width: 90%;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-4-box .inner {
+    width: auto;
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-4-box .inner {
+    width: auto;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+}
 #body-area-wrap #area .area-4-box .inner .pic-box {
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-4-box .inner .pic-box {
+    margin: 0;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #body-area-wrap #area .area-4-box .inner .pic-box {
+    width: auto;
+  }
+}
 #body-area-wrap #area .area-4-img {
   width: 430px;
+}
+@media screen and (max-width: 768px) {
+  #body-area-wrap #area .area-4-img {
+    width: auto;
+  }
 }
 
 /*-- body-area end --*/
