@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="profile" href="https://gmpg.org/xfn/11"/>
 	<?php wp_head(); //ヘッダーに必ず書く ?>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body <?php body_class(); //<body>にクラス属性を追加する ?>>
@@ -54,6 +55,18 @@
 					<div class="openbtn1-wrap">
 					<div class="menu">MENU</div>
 						<div class="openbtn1"><span></span><span></span><span></span></div>
+						<!--グロナビ start -->
+						<nav id="g-nav">
+							<div id="g-nav-list">
+							<ul>
+							<li><a href="#">Top</a></li>  
+							<li><a href="#">About</a></li>  
+							<li><a href="#">Service</a></li>  
+							<li><a href="#">Contact</a></li>  
+							</ul>
+							</div>
+						</nav>
+						<!--グロナビ end -->
 					</div>
 				</div>
 			</div>
